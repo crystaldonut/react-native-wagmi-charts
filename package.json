@@ -13,7 +13,6 @@
     "lint": "eslint \"**/*.{js,ts,tsx}\"",
     "format": "prettier --write \"**/*.{js,ts,tsx}\"",
     "build": "bob build",
-    "publishOnly": "bob build",
     "example": "pnpm --filter react-native-wagmi-charts-example run start",
     "pods": "cd example && pod-install --quiet",
     "bootstrap": "pnpm example && pnpm && pnpm pods"
@@ -36,9 +35,6 @@
     "react-native",
     "ios",
     "android"
-  ],
-  "workspaces": [
-    "example"
   ],
   "engines": {
     "node": ">= 18.0.0"
