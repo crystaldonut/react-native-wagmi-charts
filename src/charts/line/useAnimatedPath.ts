@@ -5,7 +5,7 @@ import {
   withTiming,
 } from 'react-native-reanimated';
 
-import { interpolatePath } from './utils';
+import { interpolatePath } from './utils/interpolatePath';
 import { usePrevious } from '../../utils';
 
 export function useAnimatedPath({

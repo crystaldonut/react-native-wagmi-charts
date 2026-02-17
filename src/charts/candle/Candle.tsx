@@ -7,7 +7,8 @@ import Animated, {
 import { Line, LineProps, NumberProp, Rect, RectProps } from 'react-native-svg';
 
 import type { TCandle, TDomain } from './types';
-import { getY, getHeight } from './utils';
+import { getY } from './utils/getY';
+import { getHeight } from './utils/getHeight';
 
 const AnimatedRect = Animated.createAnimatedComponent(Rect);
 const AnimatedLine = Animated.createAnimatedComponent(Line);

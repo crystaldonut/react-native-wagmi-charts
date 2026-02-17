@@ -9,7 +9,8 @@ import type { TLineChartData, TLineChartDataProp } from './types';
 import { LineChartDataProvider } from './Data';
 
 import type { TLineChartContext, YRangeProp } from './types';
-import { getDomain, lineChartDataPropToArray } from './utils';
+import { getDomain } from './utils/getDomain';
+import { lineChartDataPropToArray } from './utils/lineChartDataPropToArray';
 
 export const LineChartContext = createContext<TLineChartContext>({
   currentX: { value: -1 } as TLineChartContext['currentX'],

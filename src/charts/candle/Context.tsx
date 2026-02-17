@@ -7,7 +7,7 @@ import {
 } from 'react-native-reanimated';
 
 import type { TContext, TData, TDomain } from './types';
-import { getDomain } from './utils';
+import { getDomain } from './utils/getDomain';
 
 export const CandlestickChartContext = React.createContext<TContext>({
   currentX: { value: -1 } as SharedValue<number>,
