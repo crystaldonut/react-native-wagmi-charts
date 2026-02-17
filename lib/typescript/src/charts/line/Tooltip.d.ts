@@ -23,7 +23,7 @@ export type LineChartTooltipProps = AnimatedProps<ViewProps> & {
      */
     at?: number;
 };
-export declare function LineChartTooltip({ children, format, xGutter, yGutter, cursorGutter, position, withHorizontalFloating, textProps, textStyle, at, ...props }: LineChartTooltipProps): any;
+export declare function LineChartTooltip({ children, format, xGutter, yGutter, cursorGutter, position, withHorizontalFloating, textProps, textStyle, at, ...props }: LineChartTooltipProps): React.JSX.Element;
 export declare namespace LineChartTooltip {
     var displayName: string;
 }

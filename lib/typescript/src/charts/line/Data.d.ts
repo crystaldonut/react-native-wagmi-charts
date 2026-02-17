@@ -1,3 +1,4 @@
+import React from 'react';
 import type { ReactNode } from 'react';
 import type { TLineChartData, TLineChartDataProp } from './types';
 export declare const DefaultLineChartId = "__LineChartData";
@@ -8,13 +9,15 @@ export type LineChartDataProviderProps = {
     children: ReactNode;
     data: TLineChartDataProp;
 };
-export declare function LineChartDataProvider({ children, data, }: LineChartDataProviderProps): any;
+export declare function LineChartDataProvider({ children, data, }: LineChartDataProviderProps): React.JSX.Element;
 export declare function LineChartIdProvider({ id, children, }: {
     id?: string;
     children: ReactNode;
-}): any;
-export declare const useLineChartId: () => any;
+}): React.JSX.Element;
+export declare const useLineChartId: () => string | undefined;
 export declare function useLineChartData({ id }: {
     id?: string;
-}): any;
+}): {
+    data: TLineChartData | undefined;
+};
 //# sourceMappingURL=Data.d.ts.map

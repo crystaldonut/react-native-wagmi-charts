@@ -1,3 +1,4 @@
+import * as React from 'react';
 import { AnimatedProps } from 'react-native-reanimated';
 import { PathProps } from 'react-native-svg';
 export type LineChartPathProps = AnimatedProps<PathProps> & {
@@ -22,7 +23,7 @@ export type LineChartPathProps = AnimatedProps<PathProps> & {
      */
     isTransitionEnabled?: boolean;
 };
-export declare function LineChartPath({ color, inactiveColor, width: strokeWidth, ...props }: LineChartPathProps): any;
+export declare function LineChartPath({ color, inactiveColor, width: strokeWidth, ...props }: LineChartPathProps): React.JSX.Element;
 export declare namespace LineChartPath {
     var displayName: string;
 }

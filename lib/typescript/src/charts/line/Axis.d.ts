@@ -1,3 +1,4 @@
+import React from 'react';
 import { ViewProps, TextStyle, ViewStyle } from 'react-native';
 export type LineChartAxisPosition = 'left' | 'right' | 'top' | 'bottom';
 export type LineChartAxisOrientation = 'horizontal' | 'vertical';
@@ -15,5 +16,5 @@ export type LineChartAxisProps = ViewProps & {
     labelWidth?: number;
     containerStyle?: ViewStyle;
 };
-export declare const LineChartAxis: ({ position, orientation, color, strokeWidth, tickCount, domain, hideOnInteraction, format, textStyle, labelPadding, containerStyle, ...props }: LineChartAxisProps) => any;
+export declare const LineChartAxis: ({ position, orientation, color, strokeWidth, tickCount, domain, hideOnInteraction, format, textStyle, labelPadding, containerStyle, ...props }: LineChartAxisProps) => React.JSX.Element;
 //# sourceMappingURL=Axis.d.ts.map

@@ -1,9 +1,9 @@
 /**
  * @worklet
  */
-export declare function formatDatetime({ value, locale, options, }: {
+export declare const formatDatetime: ({ value, locale, options, }: {
     value: number;
     locale?: string;
     options?: Intl.DateTimeFormatOptions;
-}): string;
+}) => string;
 //# sourceMappingURL=formatDatetime.d.ts.map

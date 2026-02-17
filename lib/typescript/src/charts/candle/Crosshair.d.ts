@@ -11,6 +11,6 @@ type CandlestickChartCrosshairProps = {
     lineProps?: Partial<CandlestickChartLineProps>;
     minDurationMs?: number;
 };
-export declare function CandlestickChartCrosshair({ color, onCurrentXChange, children, horizontalCrosshairProps, verticalCrosshairProps, lineProps, minDurationMs, }: CandlestickChartCrosshairProps): any;
+export declare function CandlestickChartCrosshair({ color, onCurrentXChange, children, horizontalCrosshairProps, verticalCrosshairProps, lineProps, minDurationMs, }: CandlestickChartCrosshairProps): React.JSX.Element;
 export {};
 //# sourceMappingURL=Crosshair.d.ts.map

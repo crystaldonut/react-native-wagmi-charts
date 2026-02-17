@@ -11,7 +11,7 @@ type LineChartCursorCrosshairProps = Omit<LineChartCursorProps, 'children' | 'ty
     crosshairProps?: ViewProps;
     crosshairOuterProps?: ViewProps;
 };
-export declare function LineChartCursorCrosshair({ children, color, size, outerSize, crosshairWrapperProps, crosshairProps, crosshairOuterProps, ...props }: LineChartCursorCrosshairProps): any;
+export declare function LineChartCursorCrosshair({ children, color, size, outerSize, crosshairWrapperProps, crosshairProps, crosshairOuterProps, ...props }: LineChartCursorCrosshairProps): React.JSX.Element;
 export declare namespace LineChartCursorCrosshair {
     var displayName: string;
 }

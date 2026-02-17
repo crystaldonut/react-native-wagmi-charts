@@ -1,2 +1,3 @@
-export default function App(): any;
+import React from 'react';
+export default function App(): React.JSX.Element;
 //# sourceMappingURL=CandlestickChart.d.ts.map

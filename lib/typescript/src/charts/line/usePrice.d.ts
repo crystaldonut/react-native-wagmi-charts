@@ -4,7 +4,7 @@ export declare function useLineChartPrice({ format, precision, index, }?: {
     precision?: number;
     index?: number;
 }): {
-    value: any;
-    formatted: any;
+    value: import("react-native-reanimated").DerivedValue<string>;
+    formatted: import("react-native-reanimated").DerivedValue<string>;
 };
 //# sourceMappingURL=usePrice.d.ts.map

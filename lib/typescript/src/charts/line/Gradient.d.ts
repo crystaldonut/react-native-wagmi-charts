@@ -5,7 +5,7 @@ export type LineChartGradientProps = AnimatedProps<PathProps> & {
     color?: string;
     children?: React.ReactNode;
 };
-export declare function LineChartGradient({ color: overrideColor, children, ...props }: LineChartGradientProps): any;
+export declare function LineChartGradient({ color: overrideColor, children, ...props }: LineChartGradientProps): React.JSX.Element;
 export declare namespace LineChartGradient {
     var displayName: string;
 }

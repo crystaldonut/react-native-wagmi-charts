@@ -1,7 +1,18 @@
 import React from 'react';
 import * as d3Shape from 'd3-shape';
 import { ViewProps } from 'react-native';
-export declare const LineChartDimensionsContext: any;
+import { Path } from 'react-native-redash';
+export declare const LineChartDimensionsContext: React.Context<{
+    width: number;
+    height: number;
+    pointWidth: number;
+    parsedPath: Path;
+    path: string;
+    area: string;
+    shape: d3Shape.CurveFactory;
+    gutter: number;
+    pathWidth: number;
+}>;
 export type LineChartProps = ViewProps & {
     children: React.ReactNode;
     yGutter?: number;
@@ -14,7 +25,7 @@ export type LineChartProps = ViewProps & {
     id?: string;
     absolute?: boolean;
 };
-export declare function LineChart({ children, yGutter, width, height, shape, id, absolute, ...props }: LineChartProps): any;
+export declare function LineChart({ children, yGutter, width, height, shape, id, absolute, ...props }: LineChartProps): React.JSX.Element;
 export declare namespace LineChart {
     var displayName: string;
 }

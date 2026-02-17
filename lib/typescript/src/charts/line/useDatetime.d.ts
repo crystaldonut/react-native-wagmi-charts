@@ -4,7 +4,7 @@ export declare function useLineChartDatetime({ format, locale, options, }?: {
     locale?: string;
     options?: Intl.DateTimeFormatOptions;
 }): {
-    value: any;
-    formatted: any;
+    value: import("react-native-reanimated").DerivedValue<number>;
+    formatted: import("react-native-reanimated").DerivedValue<string>;
 };
 //# sourceMappingURL=useDatetime.d.ts.map

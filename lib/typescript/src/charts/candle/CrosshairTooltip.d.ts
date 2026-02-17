@@ -12,6 +12,6 @@ export type CandlestickChartCrosshairTooltipProps = ViewProps & {
 export type CandlestickChartCrosshairTooltipContext = {
     position: SharedValue<'left' | 'right'>;
 };
-export declare const CandlestickChartCrosshairTooltipContext: any;
-export declare function CandlestickChartCrosshairTooltip({ children, xGutter, yGutter, tooltipTextProps, textStyle, ...props }: CandlestickChartCrosshairTooltipProps): any;
+export declare const CandlestickChartCrosshairTooltipContext: React.Context<CandlestickChartCrosshairTooltipContext>;
+export declare function CandlestickChartCrosshairTooltip({ children, xGutter, yGutter, tooltipTextProps, textStyle, ...props }: CandlestickChartCrosshairTooltipProps): React.JSX.Element;
 //# sourceMappingURL=CrosshairTooltip.d.ts.map

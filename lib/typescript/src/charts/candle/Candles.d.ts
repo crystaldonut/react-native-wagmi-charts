@@ -1,3 +1,4 @@
+import React from 'react';
 import { SvgProps } from 'react-native-svg';
 import { CandlestickChartCandleProps } from './Candle';
 type CandlestickChartCandlesProps = SvgProps & {
@@ -13,6 +14,6 @@ type CandlestickChartCandlesProps = SvgProps & {
     candleProps?: Partial<CandlestickChartCandleProps>;
     useAnimations?: boolean;
 };
-export declare function CandlestickChartCandles({ positiveColor, negativeColor, rectProps, lineProps, margin, useAnimations, renderRect, renderLine, candleProps, ...props }: CandlestickChartCandlesProps): any;
+export declare function CandlestickChartCandles({ positiveColor, negativeColor, rectProps, lineProps, margin, useAnimations, renderRect, renderLine, candleProps, ...props }: CandlestickChartCandlesProps): React.JSX.Element;
 export {};
 //# sourceMappingURL=Candles.d.ts.map

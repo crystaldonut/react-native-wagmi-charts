@@ -11,8 +11,10 @@ export type LineChartCursorProps = {
     orientation?: 'horizontal' | 'vertical';
     persistOnEnd?: boolean;
 };
-export declare const CursorContext: any;
-export declare function LineChartCursor({ children, snapToPoint, type, at, shouldCancelWhenOutside, persistOnEnd, minDurationMs, onActivated, onEnded, }: LineChartCursorProps): any;
+export declare const CursorContext: React.Context<{
+    type: string;
+}>;
+export declare function LineChartCursor({ children, snapToPoint, type, at, shouldCancelWhenOutside, persistOnEnd, minDurationMs, onActivated, onEnded, }: LineChartCursorProps): React.JSX.Element;
 export declare namespace LineChartCursor {
     var displayName: string;
 }

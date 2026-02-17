@@ -148,7 +148,7 @@ function splitCurveAsPoints(points, segmentCount) {
  * @param {Number} segmentCount The number of segments to create
  * @return {Object[]} An array of commands representing the segments in sequence
  */
-export function splitCurve(commandStart, commandEnd, segmentCount) {
+export const splitCurve = (commandStart, commandEnd, segmentCount) => {
   'worklet';
 
   const points = [[commandStart.x, commandStart.y]];
@@ -161,7 +161,7 @@ export function splitCurve(commandStart, commandEnd, segmentCount) {
   points.push([commandEnd.x, commandEnd.y]);
 
   return splitCurveAsPoints(points, segmentCount).map(pointsToCommand);
-}
+};
 
 /**
  * List of params for each command type in a path `d` attribute
@@ -437,7 +437,7 @@ function extend(commandsToExtend, referenceCommands, excludeSegment) {
  *
  * @param {String|null} d A path `d` string
  */
-export function pathCommandsFromString(d) {
+export const pathCommandsFromString = (d) => {
   'worklet';
 
   // split into valid tokens
@@ -470,7 +470,7 @@ export function pathCommandsFromString(d) {
     }
   }
   return commands;
-}
+};
 
 /**
  * Interpolate from A to B by extending A and B during interpolation to have
@@ -488,11 +488,11 @@ export function pathCommandsFromString(d) {
  *   end command object and returns true if the segment should be excluded from splitting.
  * @returns {Function} Interpolation function that maps t ([0, 1]) to an array of path commands.
  */
-export function interpolatePathCommands(
+export const interpolatePathCommands = (
   aCommandsInput,
   bCommandsInput,
   excludeSegment
-) {
+) => {
   'worklet';
 
   // make a copy so we don't mess with the input arrays
@@ -593,7 +593,7 @@ export function interpolatePathCommands(
 
     return interpolatedCommands;
   };
-}
+};
 
 /**
  * Interpolate from A to B by extending A and B during interpolation to have
@@ -608,7 +608,7 @@ export function interpolatePathCommands(
  *   end command object and returns true if the segment should be excluded from splitting.
  * @returns {Function} Interpolation function that maps t ([0, 1]) to a path `d` string.
  */
-export function interpolatePath(a, b, excludeSegment) {
+export const interpolatePath = (a, b, excludeSegment) => {
   'worklet';
 
   const aCommands = pathCommandsFromString(a);
@@ -647,4 +647,4 @@ export function interpolatePath(a, b, excludeSegment) {
 
     return interpolatedString;
   };
-}
+};

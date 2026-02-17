@@ -34,5 +34,5 @@ export type CandlestickChartCandleProps = {
         candle: TCandle;
     }) => React.ReactNode;
 };
-export declare const CandlestickChartCandle: ({ candle, maxHeight, domain, margin, positiveColor, negativeColor, rectProps: overrideRectProps, lineProps: overrideLineProps, index, width, useAnimations, renderLine, renderRect, }: CandlestickChartCandleProps) => any;
+export declare const CandlestickChartCandle: ({ candle, maxHeight, domain, margin, positiveColor, negativeColor, rectProps: overrideRectProps, lineProps: overrideLineProps, index, width, useAnimations, renderLine, renderRect, }: CandlestickChartCandleProps) => React.JSX.Element;
 //# sourceMappingURL=Candle.d.ts.map

@@ -34,7 +34,7 @@ export * from './useLineChart';
 export * from './usePrice';
 export * from './types';
 export declare const LineChart: typeof _LineChart & {
-    Axis: ({ position, orientation, color, strokeWidth, tickCount, domain, hideOnInteraction, format, textStyle, labelPadding, containerStyle, ...props }: import("./Axis").LineChartAxisProps) => any;
+    Axis: ({ position, orientation, color, strokeWidth, tickCount, domain, hideOnInteraction, format, textStyle, labelPadding, containerStyle, ...props }: import("./Axis").LineChartAxisProps) => import("react").JSX.Element;
     Chart: typeof _LineChart;
     Dot: typeof LineChartDot;
     Path: typeof LineChartPathWrapper;
@@ -52,6 +52,6 @@ export declare const LineChart: typeof _LineChart & {
     useDatetime: typeof useLineChartDatetime;
     usePrice: typeof useLineChartPrice;
     useChart: typeof useLineChart;
-    HoverTrap: () => any;
+    HoverTrap: () => import("react").JSX.Element;
 };
 //# sourceMappingURL=index.d.ts.map

@@ -7,14 +7,14 @@
  * @param {Number} segmentCount The number of segments to create
  * @return {Object[]} An array of commands representing the segments in sequence
  */
-export declare function splitCurve(commandStart: any, commandEnd: any, segmentCount: any): {}[];
+export declare const splitCurve: (commandStart: any, commandEnd: any, segmentCount: any) => {}[];
 /**
  * Takes a path `d` string and converts it into an array of command
  * objects. Drops the `Z` character.
  *
  * @param {String|null} d A path `d` string
  */
-export declare function pathCommandsFromString(d: any): {
+export declare const pathCommandsFromString: (d: any) => {
     type: any;
 }[];
 /**
@@ -33,7 +33,7 @@ export declare function pathCommandsFromString(d: any): {
  *   end command object and returns true if the segment should be excluded from splitting.
  * @returns {Function} Interpolation function that maps t ([0, 1]) to an array of path commands.
  */
-export declare function interpolatePathCommands(aCommandsInput: any, bCommandsInput: any, excludeSegment: any): (t: any) => any;
+export declare const interpolatePathCommands: (aCommandsInput: any, bCommandsInput: any, excludeSegment: any) => (t: any) => any;
 /**
  * Interpolate from A to B by extending A and B during interpolation to have
  * the same number of points. This allows for a smooth transition when they
@@ -47,5 +47,5 @@ export declare function interpolatePathCommands(aCommandsInput: any, bCommandsIn
  *   end command object and returns true if the segment should be excluded from splitting.
  * @returns {Function} Interpolation function that maps t ([0, 1]) to a path `d` string.
  */
-export declare function interpolatePath(a: any, b: any, excludeSegment: any): (t: any) => any;
+export declare const interpolatePath: (a: any, b: any, excludeSegment: any) => (t: any) => any;
 //# sourceMappingURL=interpolatePath.d.ts.map

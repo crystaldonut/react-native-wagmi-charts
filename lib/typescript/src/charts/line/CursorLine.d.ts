@@ -11,7 +11,7 @@ type LineChartCursorLineProps = {
     textStyle?: TextStyle;
     persistOnEnd?: boolean;
 } & Omit<LineChartCursorProps, 'type' | 'children'>;
-export declare function LineChartCursorLine({ children, color, lineProps, format, textStyle, ...cursorProps }: LineChartCursorLineProps): any;
+export declare function LineChartCursorLine({ children, color, lineProps, format, textStyle, ...cursorProps }: LineChartCursorLineProps): React.JSX.Element;
 export declare namespace LineChartCursorLine {
     var displayName: string;
 }

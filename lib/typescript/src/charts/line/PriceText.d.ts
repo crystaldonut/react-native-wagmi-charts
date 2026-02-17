@@ -1,3 +1,4 @@
+import React from 'react';
 import type { TextProps as RNTextProps } from 'react-native';
 import type { AnimatedProps } from 'react-native-reanimated';
 import type { TFormatterFn } from '../../types';
@@ -20,7 +21,7 @@ export type LineChartPriceTextProps = {
      */
     getTextColor?: (formattedValue: string) => string;
 };
-export declare function LineChartPriceText({ format, precision, variant, style, index, useOptimizedRendering, getTextColor, }: LineChartPriceTextProps): any;
+export declare function LineChartPriceText({ format, precision, variant, style, index, useOptimizedRendering, getTextColor, }: LineChartPriceTextProps): React.JSX.Element;
 export declare namespace LineChartPriceText {
     var displayName: string;
 }

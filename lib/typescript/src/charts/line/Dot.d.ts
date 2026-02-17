@@ -1,3 +1,4 @@
+import React from 'react';
 import { AnimatedProps } from 'react-native-reanimated';
 import { CircleProps } from 'react-native-svg';
 export type LineChartDotProps = {
@@ -24,7 +25,7 @@ export type LineChartDotProps = {
     outerSize?: number;
     pulseDurationMs?: number;
 };
-export declare function LineChartDot({ at, color: defaultColor, dotProps, hasOuterDot: defaultHasOuterDot, hasPulse, inactiveColor, outerDotProps, pulseBehaviour, pulseDurationMs, showInactiveColor, size, outerSize, }: LineChartDotProps): any;
+export declare function LineChartDot({ at, color: defaultColor, dotProps, hasOuterDot: defaultHasOuterDot, hasPulse, inactiveColor, outerDotProps, pulseBehaviour, pulseDurationMs, showInactiveColor, size, outerSize, }: LineChartDotProps): React.JSX.Element;
 export declare namespace LineChartDot {
     var displayName: string;
 }

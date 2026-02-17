@@ -1,4 +1,5 @@
 import { LineProps } from 'react-native-svg';
+import React from 'react';
 type HorizontalLineProps = {
     color?: string;
     lineProps?: Partial<LineProps>;
@@ -24,7 +25,7 @@ type HorizontalLineProps = {
         value: number;
     } | number;
 };
-export declare function LineChartHorizontalLine({ color, lineProps, at, offsetY, }: HorizontalLineProps): any;
+export declare function LineChartHorizontalLine({ color, lineProps, at, offsetY, }: HorizontalLineProps): React.JSX.Element;
 export declare namespace LineChartHorizontalLine {
     var displayName: string;
 }

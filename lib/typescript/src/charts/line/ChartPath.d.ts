@@ -15,7 +15,7 @@ type LineChartPathWrapperProps = {
     mountAnimationDuration?: number;
     mountAnimationProps?: Partial<WithTimingConfig>;
 };
-export declare function LineChartPathWrapper({ animationDuration, animationProps, children, color, inactiveColor, width: strokeWidth, widthOffset, pathProps, showInactivePath, animateOnMount, mountAnimationDuration, mountAnimationProps, }: LineChartPathWrapperProps): any;
+export declare function LineChartPathWrapper({ animationDuration, animationProps, children, color, inactiveColor, width: strokeWidth, widthOffset, pathProps, showInactivePath, animateOnMount, mountAnimationDuration, mountAnimationProps, }: LineChartPathWrapperProps): React.JSX.Element;
 export declare namespace LineChartPathWrapper {
     var displayName: string;
 }
