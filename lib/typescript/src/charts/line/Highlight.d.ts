@@ -1,0 +1,15 @@
+import { AnimatedProps } from 'react-native-reanimated';
+import { PathProps } from 'react-native-svg';
+export type LineChartColorProps = AnimatedProps<PathProps> & {
+    color?: string;
+    from: number;
+    to: number;
+    showInactiveColor?: boolean;
+    inactiveColor?: string;
+    width?: number;
+};
+export declare function LineChartHighlight({ color, inactiveColor, showInactiveColor, from, to, width: strokeWidth, ...props }: LineChartColorProps): any;
+export declare namespace LineChartHighlight {
+    var displayName: string;
+}
+//# sourceMappingURL=Highlight.d.ts.map
